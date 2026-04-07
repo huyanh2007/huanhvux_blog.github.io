@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box; /* Giúp padding không tràn màn hình*/
+}
+
+/* Reset CSS cơ bản */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+body { background-color: #f4f4f9; color: #333; line-height: 1.6; }
+.container { max-width: 800px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+h1, h2 { margin-bottom: 15px; color: #2c3e50; }
+
+/* Link bài viết */
+.blog-links { list-style: none; }
+.blog-links li { margin-bottom: 10px; }
+.blog-links a { text-decoration: none; color: #3498db; font-size: 18px; }
+.blog-links a:hover { text-decoration: underline; }
+
+/* Tài liệu */
+.documents a { display: inline-block; padding: 10px 15px; margin-right: 10px; background: #27ae60; color: white; text-decoration: none; border-radius: 5px; }
+
+/* Thư viện ảnh/video */
+.gallery { margin-top: 30px; }
+.media-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+.media-item { width: 100%; height: 150px; object-fit: cover; cursor: pointer; border-radius: 5px; transition: 0.3s; }
+.media-item:hover { opacity: 0.7; transform: scale(1.05); }
+
+/* ---- PHẦN CSS CHO LIGHTBOX (MODAL) ---- */
+.modal {
+    display: none; /* Ẩn đi mặc định */
+    position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Nền đen trong suốt */
+}
+
+.modal-content-wrapper {
+    display: flex; justify-content: center; align-items: center;
+    width: 100%; height: 100%; overflow: hidden;
+}
+
+.modal-content {
+    max-width: 90%; max-height: 90%;
+    transition: transform 0.3s ease; /* Hiệu ứng zoom mượt */
+}
+
+/* Nút Đóng */
+.close-btn {
+    position: absolute; top: 15px; right: 35px;
+    color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer; z-index: 1001;
+}
+
+/* Nút điều khiển (Zoom, Tải về) */
+.modal-controls {
+    position: absolute; top: 20px; left: 20px; z-index: 1001;
+}
+.modal-controls button {
+    padding: 10px 15px; margin-right: 10px; font-size: 16px;
+    background: #fff; border: none; border-radius: 5px; cursor: pointer;
+}
+.modal-controls button:hover { background: #ddd; }
