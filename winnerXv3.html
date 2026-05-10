@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiếc xe máy côn tay cá nhân đầu tiên</title>
+    <link rel="stylesheet" href="style.css">
+    <script src ="myscripts.js" defer></script>
+</head>
+<body style="background-image: url('assets/winnerX.webp');">
+    <div class="container">
+        <a href ="index.html">⬅Quay lại trang chủ</a>
+        <h1>Chiếc xe côn tay đầu tiên của tôi</h1>
+        <p>Đây là chiếc Honda WinnerX bản V3 smartkey có phanh ABS , odo lúc mua lại là 9000km với giá 24.5 triệu VND </p>
+        <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775407133/z7577051723658_604872d9a1b32e8c870c1960f237c2a6_hg1edc.jpg" class="media-item">
+        <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775407131/z7577051720388_eeb0cd59556191463f5466b5b9863fef_pvornw.jpg" class="media-item">
+        <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775407128/z7577051716895_a780e4e1086b773a027113ffc89a27fe_etk3zq.jpg" class="media-item">
+        <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775407125/z7577051713384_153007eddb21a6db85cb4bf8971184fa_qdn0ws.jpg" class="media-item">
+        <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775407122/z7577051711192_e5cd1070fd1746575ad6d7888e1566cd_g91khm.jpg" class="media-item">
+        <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775407121/z7577051706802_526a128e16c3fe2b8bd5e1fd2162c662_bnhlkv.jpg" class="media-item">
+        <a href="index.html">⬅Quay lại trang chủ</a>
+    </div>
+
+
+
+
+    <!-- KHUNG LIGHTBOX -->
+    <div id="myModal" class="modal">
+        <span class="close-btn">&times;</span>
+        
+        <div class="modal-controls">
+            <button id="zoomBtn">🔍 Phóng kích thước thật</button>
+            <button id="downloadBtn">⬇ Tải về máy</button>
+        </div>
+
+        <div class="modal-content-wrapper">
+            <!-- Chứa cả thẻ img và video (JS sẽ tự động ẩn/hiện cái tương ứng) -->
+            <img class="modal-content" id="img01" style="display: none;">
+            <video class="modal-content" id="vid01" controls style="display: none;"></video>
+        </div>
+    </div>
+</body>
+</html>
