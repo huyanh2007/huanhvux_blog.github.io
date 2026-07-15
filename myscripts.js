@@ -85,3 +85,31 @@ downloadBtn.addEventListener("click", function(e) {
     }
     window.open(downloadUrl, "_blank");
 });
+
+/* Mới thêm function của mũi tên */
+
+
+
+document.querySelectorAll(".gallery-wrapper").forEach(wrapper => {
+
+    const gallery = wrapper.querySelector(".gallery");
+
+    const next = wrapper.querySelector(".next-btn");
+
+    const prev = wrapper.querySelector(".prev-btn");
+
+    next.onclick = () => {
+        gallery.scrollBy({
+            left:300,
+            behavior:"smooth"
+        });
+    };
+
+    prev.onclick = () => {
+        gallery.scrollBy({
+            left:-300,
+            behavior:"smooth"
+        });
+    };
+
+});
