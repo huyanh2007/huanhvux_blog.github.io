@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -6,63 +7,97 @@
     <title>Đây là web cá nhân về người bạn cấp 2 của mình </title>
     <link rel="stylesheet" href="style.css">
     <link rel = "icon" type = "iamge/x-icon" href ="assets/when-beluga-is-sus.jpg">
+    
     <script src ="myscripts.js" defer></script>
 </head>
 <body style="background-image: url('assets/background-banner.jpg'); background-repeat: repeat;">
-    <div class="container">
-<!--Năm cấp 2 -->
-        <br>
-        <hr>
-        <br>
-        <div class="gallery-title">
-            <a href ="index.html">⬅Quay lại trang chủ</a>
+
+    <div class ="private-content" id="privateContent">
+        <div class="container">
+    <!--Năm cấp 2 -->
             <br>
-            <h1>Tào Tuệ Mỹ - người bạn đồng hành năm cấp 2 </h1>
-            <a>Người bạn cùng bàn năm lớp 6(Chụp bằng máy Blackberry 9000):</a>
-        </div>
-        <div class="gallery-wrapper">
-            <div class="gallery">
-                <button class="prev-btn"></button>
-                <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775414618/T%C3%A0o_Tu%E1%BB%87_M%E1%BB%B9_lvxknk.jpg" class="media-item">
-                <button class="next-btn"></button>
+            <hr>
+            <br>
+            <div class="gallery-title">
+                <a href ="index.html">⬅Quay lại trang chủ</a>
+                <br>
+                <h1>Tào Tuệ Mỹ - người bạn đồng hành năm cấp 2 </h1>
+                <a>Người bạn cùng bàn năm lớp 6(Chụp bằng máy Blackberry 9000):</a>
+            </div>
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <button class="prev-btn"></button>
+                    <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775414618/T%C3%A0o_Tu%E1%BB%87_M%E1%BB%B9_lvxknk.jpg" class="media-item">
+                    <button class="next-btn"></button>
+                </div>
+            </div>
+
+
+    <!-- Chụp kỷ yếu -->
+            <br>
+            <hr>
+            <br>
+            <div class ="gallery-title">
+                <a>Chụp kỉ yếu hồi lớp 9 , tôi đã rất tiếc khi ko xin chụp chung cùng bạn:</a>
+            </div>
+            <div class ="gallery-wrapper">
+                <div class ="gallery">
+                    <button class="prev-btn"></button>
+                    <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775414616/IMG_1705322664132_1705322744369_ksgcrp.jpg" class="media-item">
+                    <button class="next-btn"></button>
+                </div>
+            </div>
+
+
+
+    <!-- Chụp ảnh trước khi bạn đi du học -->
+            <br>
+            <hr>
+            <br>
+            <div class ="gallery-title">
+                <a>Cuối 2025, bạn chọn con đường đi du học , vào ngày 10/9/2025 mình có 1 buổi đi chơi ngắn cùng bạn trước khi bạn sang Bỉ:</a>
+            </div>
+            <div class = "gallery-wrapper">
+                <button class="prev-btn">◀</button>
+                <div class ="gallery">
+                    <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775414633/z7604291135477_704f1cf8ae2a5cb76cd7c637fe50e0e6_axnhii.jpg" class="media-item">
+                    <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775414630/z7604291054615_37bc4538cb0caf83c6d2f14fbe385567_c702zl.jpg" class="media-item">
+                    <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775414627/z7604268553119_47a44e333eee69e43c4767d41564a751_dg9mpp.jpg" class="media-item">
+                    <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775414613/f22617856_huz5is.jpg" class="media-item">
+                </div>
+                <button class="next-btn">▶</button>
             </div>
         </div>
+    </div>
 
 
-<!-- Chụp kỷ yếu -->
-        <br>
-        <hr>
-        <br>
-        <div class ="gallery-title">
-            <a>Chụp kỉ yếu hồi lớp 9 , tôi đã rất tiếc khi ko xin chụp chung cùng bạn:</a>
-        </div>
-        <div class ="gallery-wrapper">
-            <div class ="gallery">
-                <button class="prev-btn"></button>
-                <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775414616/IMG_1705322664132_1705322744369_ksgcrp.jpg" class="media-item">
-                <button class="next-btn"></button>
+<!--Hộp nhập họ và tên-->
+    <div class="private-overlay" id="privateOverlay">
+        <div class= "private-box">
+            <div class ="private-icon">
+                🔒
             </div>
+            <h2>Nội dung riêng tư</h2>
+            <p>
+                Đây là nội dung cá nhân. 
+                Vui lòng nhập đầy đủ họ và tên để tiếp tục.
+            </p>
+
+            <input 
+                type="text"
+                id="privateName"
+                class="private-name-input"
+                placeholder="Nhập họ và tên"
+                autocomplete="off"
+            >
+
+            <button id="privateSubmit" class="private-submit">Xác nhận</button>
+            <div id="privateError" class="private-error"></div>
         </div>
+    </div>
 
 
-
-<!-- Chụp ảnh trước khi bạn đi du học -->
-        <br>
-        <hr>
-        <br>
-        <div class ="gallery-title">
-            <a>Cuối 2025, bạn chọn con đường đi du học , vào ngày 10/9/2025 mình có 1 buổi đi chơi ngắn cùng bạn trước khi bạn sang Bỉ:</a>
-        </div>
-        <div class = "gallery-wrapper">
-            <button class="prev-btn">◀</button>
-            <div class ="gallery">
-                <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775414633/z7604291135477_704f1cf8ae2a5cb76cd7c637fe50e0e6_axnhii.jpg" class="media-item">
-                <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775414630/z7604291054615_37bc4538cb0caf83c6d2f14fbe385567_c702zl.jpg" class="media-item">
-                <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775414627/z7604268553119_47a44e333eee69e43c4767d41564a751_dg9mpp.jpg" class="media-item">
-                <img src="https://res.cloudinary.com/dc35fntoz/image/upload/v1775414613/f22617856_huz5is.jpg" class="media-item">
-            </div>
-            <button class="next-btn">▶</button>
-        </div>
+    <div class ="container">
         <a href ="index.html">⬅Quay lại trang chủ</a>
     </div>
     <br>
@@ -87,5 +122,6 @@
             <video class="modal-content" id="vid01" controls style="display: none;"></video>
         </div>
     </div>
+    <script src="private-access.js"></script>
 </body>
 </html>
