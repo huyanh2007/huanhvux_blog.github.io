@@ -16,6 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const allowedNames = [
         "Vũ Huy Anh",
         "Tào Tuệ Mỹ",
+        "Nguyễn Viết Tài Thu",
+        "Nguyễn Hoàng Gia Bảo",
+        "Phạm Hoàng Long Nhi",
+        "Nguyễn Ngọc Linh",
+        "Nguyễn Kim Ngân",
         "Đinh Nguyễn Ngọc Quang"
     ];
 
@@ -48,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (enteredName === "") {
 
             errorMessage.textContent =
-                "Vui lòng nhập họ và tên.";
+                "Vui lòng nhập đầy đủ họ và tên.";
 
             return;
         }
