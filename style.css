@@ -28,7 +28,7 @@ body {
 /* HEADER */
 
 header {
-    background-color: #2c3e50;
+    background-color: #345372;
 
     text-align: center;
 
@@ -142,7 +142,7 @@ main {
 /* LINK / BUTTON CHUNG */
 
 a {
-    color: #0063bf;
+    color: #006cd1;
     text-decoration: none;
 }
 a:hover{
@@ -152,7 +152,7 @@ a:hover{
 .back-btn {
     text-decoration: none;
 
-    color: #3cbfe7;
+    color: #0076d1;
 
     font-weight: bold;
 
@@ -167,7 +167,7 @@ a:hover{
 h1 {
     margin-bottom: 20px;
 
-    color: #355472;
+    color: #126cc5;
 }
 
 .gallery-title {
@@ -541,7 +541,7 @@ footer p {
 @media (max-width: 360px) {
 
     header h1 {
-        font-size: 23px;
+        font-size: 20px;
     }
 
     header p {
