@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const allowedNames = [
         "Vũ Huy Anh",
         "Tào Tuệ Mỹ",
-        "Nguyễn Viết Tài Thu",
-        "Nguyễn Hoàng Gia Bảo",
         "Phạm Hoàng Long Nhi",
         "Nguyễn Ngọc Linh",
         "Nguyễn Kim Ngân",
