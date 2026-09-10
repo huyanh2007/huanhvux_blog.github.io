@@ -1,5 +1,14 @@
-.container {
+body {
+  background-color: pink;
+}
+.container img{
   display: block;
   margin: 0 auto;
   text-align: center;
+
+}
+.container p{
+  margin:auto;
+  text-align: right;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
