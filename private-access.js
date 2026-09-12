@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
      * Đây KHÔNG phải cơ chế bảo mật thực sự.
      */
     const allowedNames = [
-        "Vũ Huy Anh",
+        "Huanh Vux",
         "Tào Tuệ Mỹ",
         "Phạm Hoàng Long Nhi",
         "Nguyễn Ngọc Linh",
