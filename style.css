@@ -780,3 +780,56 @@ footer p {
     }
 
 }
+
+
+/*Background mục Huanh */
+.bg-huanh .background-slideshow {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation: huanh 30s infinite;
+}
+
+/* Lớp tối phủ lên background */
+.bg-huanh::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Nội dung nằm trên background */
+.bg-huanh .private-content {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes huanh {
+    0%{
+        background-image: url("assets/huanh/god-of-war-ragnarok.jpg");
+    }
+    20%{
+        background-image: url("assets/huanh/doom-eternal.jpg");
+    }
+    40%{
+        background-image: url("assets/huanh/mk11.jpg");
+    }
+    60%{
+        background-image: url("assets/huanh/devil-may-cry-5.jpg");
+    }
+    80%{
+        background-image: url("assets/huanh/ghost-of-tsushima.jpeg");
+    }
+    100%{
+        background-image: url("assets/huanh/CODWW2.jpg");
+    }
+}
