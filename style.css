@@ -711,4 +711,72 @@ footer p {
 
 /* Back ground */
 
-/* Background cho Quang */
+/* Background cho Tue-My */
+
+.bg-tuemy .background-slideshow {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation: tuemy 50s infinite;
+}
+
+/* Lớp tối phủ lên background */
+.bg-tuemy::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Nội dung nằm trên background */
+.bg-tuemy .private-content {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes tuemy {
+
+    0% {
+        background-image: url("assets/tue-my/hoa-hong-do-1.jpg");
+    }
+
+    10% {
+        background-image: url("assets/tue-my/hoa-hong-trang-1.jpg");
+    }
+
+    20% {
+        background-image: url("assets/tue-my/hoa-hong-tim-1.jpg");
+    }
+
+    30% {
+        background-image: url("assets/tue-my/hoa-hong-cam-1.jpg");
+    }
+    40% {
+        background-image: url("assets/tue-my/hoa-ly.png");
+    }
+    50% {
+        background-image: url("assets/tue-my/hoa-cam-tu-cau.jpg");
+    }
+    65% {
+        background-image: url("assets/tue-my/hoa-mau-don.jpg");
+    }
+    75% {
+        background-image: url("assets/tue-my/hoa-tuylip-1.jpg");
+    }
+    85% {
+        background-image: url("assets/tue-my/hoa-thuy-tien.jpg");
+    }
+    100% {
+        background-image: url("assets/tue-my/hoa-oai-huong.jpg");
+    }
+
+}
