@@ -13,7 +13,7 @@ let isZoomed = false;
 mediaItems.forEach(item => {
     item.addEventListener("click", function() {
         modal.style.display = "block";
-        currentMediaSrc = this.src;
+        currentMediaSrc = this.dataset.original || this.src;
 
         // XÓA TRẠNG THÁI ZOOM CŨ
         isZoomed = false;
@@ -26,7 +26,7 @@ mediaItems.forEach(item => {
         if (this.tagName === "IMG") {
             modalImg.style.display = "block";
             modalVid.style.display = "none";
-            modalImg.src = this.src;
+            modalImg.src = this.dataset.original || this.src;
             zoomBtn.style.display = "inline-block"; // Hiện nút zoom cho ảnh
         } 
         else if (this.tagName === "VIDEO") {
