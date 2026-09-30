@@ -113,3 +113,35 @@ document.querySelectorAll(".gallery-wrapper").forEach(wrapper => {
     };
 
 });
+
+
+
+//Cập nhật gán nút di chuyển trái phải cho phím "A" , "D" và phím mũi tên trái phải 
+
+document.addEventListener("keydown", function(e) {
+    //Không xử lý khi đang gõ vào input / textarea
+    if(e.target.tagName == "INPUT" || e.target.tagName === "TEXTAREA"){
+        return;
+    }
+
+    //Sang trái : Phím "A" hoặc phím mũi tên trái 
+    if(e.key === "a" || e.key === "A" || e.key === "ArrowLeft"){
+        const prevBtn = document.querySelector(".gallery-wrapper:hover .prev-btn");
+
+        if(prevBtn){
+            e.preventDefault();
+            prevBtn.click();
+        }
+    }
+
+
+    //Sang phải : Phím "D" hoặc mũi tên phải
+    if(e.key === "d" || e.key === "D" || e.key === "ArrowRight"){
+        const nextBtn = document.querySelector(".gallery-wrapper:hover .next-btn");
+
+        if(nextBtn){
+            e.preventDefault();
+            nextBtn.click();
+        }
+    }
+});
