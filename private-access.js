@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
      * Danh sách những người được phép truy cập.
      *
      * Lưu ý:
-     * Đây KHÔNG phải cơ chế bảo mật thực sự.
+     * Đây KHÔNG phải cơ chế bảo mật thực sự. T khá chắc mấy thk bạn hoặc anh em bên UCS vào chỗ này , ko có gì để xem đâu :)))
      */
     const allowedNames = [
         "Huanh Vux",
